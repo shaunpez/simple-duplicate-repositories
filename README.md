@@ -9,7 +9,6 @@ Create a new Github repository - https://help.github.com/articles/create-a-repo/
 
 ```
 $ sh bitbucket-to-github.sh bitbucket_account current_repo github_account new_repo
-
 ```
 
 ## Duplicating Github repository to Bitbucket repository
@@ -20,5 +19,4 @@ Create a new Bitbucket repository - https://confluence.atlassian.com/bitbucket/c
 
 ```
 $ sh github-to-bitbucket.sh github_account current_repo bitbucket_account new_repo
-
 ```
