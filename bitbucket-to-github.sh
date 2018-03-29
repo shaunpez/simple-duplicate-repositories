@@ -14,7 +14,7 @@ github_account=$3
 new_repo=$4
 
 migrate_github_to_bitbucket() {
-  echo "** Attempting to Copying Github Repo to Bitbucket Repo **"
+  echo "** Attempting to Copying Bitbucket Repo to Github Repo **"
   
   # Start migrate process from github to bitbucket
   git clone --mirror https://bitbucket.org/${bitbucket_account}/${current_repo}.git && cd ${current_repo}.git/ && git remote set-url --push origin https://github.com/${github_account}/${new_repo}.git && git push --mirror 2> /dev/null
